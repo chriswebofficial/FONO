@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Matte Animated Background */
+
+.animated-bg {
+  background: linear-gradient(
+    270deg,
+    #d9d9d9,
+    #cfcfcf,
+    #e6e6e6,
+    #0f0f0f
+  );
+  background-size: 800% 800%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
